@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dash of Hope — Helping Physically Challenged Children Soar</title>
+<meta name="description" content="Dash of Hope Corporation is a 501(c)(3) nonprofit providing free residential education, vocational training, and a loving home to physically challenged, orphaned, and disadvantaged children in Andhra Pradesh, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- ============ ICON SPRITE (inline, no external icon library needed) ============ -->
+<svg style="display:none" aria-hidden="true">
+<symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V2H6.5A2.5 2.5 0 0 0 4 4.5v15Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-3"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/><path d="M9 22V12h6v10"/></symbol>
+<symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 4h8"/><path d="M3 4v10.5a1 1 0 0 0 1 1H8"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+<symbol id="i-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+<symbol id="i-file-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+<symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+<symbol id="i-footprints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/></symbol>
+<symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6.5L4 18a2 2 0 0 0 1.76 3h12.48A2 2 0 0 0 20 18l-5-9.5V2"/><path d="M8.5 2h7"/><path d="M7 15h10"/></symbol>
+<symbol id="i-paintbrush" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6 8 8"/><path d="M4.5 20.5A4.95 4.95 0 0 1 7 12a5 5 0 0 1 8.9-3.6l1.6 1.6a5 5 0 0 1-3.6 8.9 4.95 4.95 0 0 1-8.5 2.6Z"/><path d="M3 21c1-1 2-2 2-4"/></symbol>
+<symbol id="i-waves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.5 0 2.5 2 5 2 2.6 0 2.6-2 5.1-2 1.2 0 1.9.5 2.4 1"/><path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.6 0 2.6-2 5.1-2 1.2 0 1.9.5 2.4 1"/><path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 2.6 0 2.6-2 5.1-2 1.2 0 1.9.5 2.4 1"/></symbol>
+<symbol id="i-utensils" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
+<symbol id="i-basket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 11 4-7"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.6-7.4"/><path d="M12 11v5"/><path d="M8 11v5"/><path d="M16 11v5"/></symbol>
+<symbol id="i-laptop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M2 20h20"/></symbol>
+<symbol id="i-drama" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="6.5"/><circle cx="15" cy="15" r="6.5"/><circle cx="8" cy="8" r="0.6" fill="currentColor" stroke="none"/><circle cx="10" cy="10" r="0.6" fill="currentColor" stroke="none"/><circle cx="14" cy="14" r="0.6" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="0.6" fill="currentColor" stroke="none"/></symbol>
+<symbol id="i-bed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2"/></symbol>
+<symbol id="i-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 3a.3.3 0 0 0-.2-.7"/><path d="M8 2v3.5a4.5 4.5 0 0 0 9 0V2"/><path d="M11.5 22c-3 0-5.5-2.5-5.5-5.5v-6"/><circle cx="20" cy="10" r="2"/><path d="M17.5 12c0 3.5-2.5 5.5-6 5.5"/></symbol>
+<symbol id="i-chef-hat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"/><line x1="6" y1="17" x2="18" y2="17"/></symbol>
+<symbol id="i-sprout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 20h10"/><path d="M10 20c0-4.4-1.8-8-6-8 0 4 1 8 6 8Z"/><path d="M14 20c0-6 2.2-10 7-10-1 5-2 10-7 10Z"/><path d="M10 20v-9"/></symbol>
+<symbol id="i-pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/><path d="m15 5 4 4"/></symbol>
+<symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="17.5" cy="10.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="8.5" cy="7.5" r="0.6" fill="currentColor" stroke="none"/><circle cx="6.5" cy="12.5" r="0.6" fill="currentColor" stroke="none"/><path d="M12 2a10 10 0 0 0 0 20c1.1 0 2-.9 2-2a2 2 0 0 1 2-2h1a4 4 0 0 0 4-4 8 8 0 0 0-9-8Z"/></symbol>
+<symbol id="i-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+<symbol id="i-message-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5Z"/></symbol>
+<symbol id="i-bus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6v6"/><path d="M16 6v6"/><path d="M2 12h20"/><path d="M4 8h16a1 1 0 0 1 1 1v6.5a1.5 1.5 0 0 1-1.5 1.5H4.5A1.5 1.5 0 0 1 3 15.5V9a1 1 0 0 1 1-1Z"/><path d="M6 18v2"/><path d="M18 18v2"/></symbol>
+<symbol id="i-package" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M8 16H3v5"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13"/><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8Z"/><path d="M16.5 8a2.5 2.5 0 0 0 0-5C14 3 12 8 12 8Z"/></symbol>
+<symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+<symbol id="i-coffee" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></symbol>
+<symbol id="i-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/><path d="M22 10v6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="7 4 20 12 7 20 7 4"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18 6a9 9 0 0 1 0 12"/></symbol>
+<symbol id="i-mute" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5Z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></symbol>
+<symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+</svg>
+
+<!-- ============ NAVIGATION ============ -->
+<nav aria-label="Primary">
+  <button class="logo" onclick="showPage('home')" aria-label="Dash of Hope — go to homepage">
+    <svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-star"/></svg>
+    Dash of <span>Hope</span>
+  </button>
+  <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+  </button>
+  <div class="nav-links">
+    <button onclick="showPage('home')" id="nav-home" class="active">Home</button>
+    <button onclick="showPage('programs')" id="nav-programs">Programs</button>
+    <button onclick="showPage('donate')" id="nav-donate-link">Donate</button>
+    <button onclick="showPage('about')" id="nav-about">About Us</button>
+    <button onclick="showPage('contact')" id="nav-contact">Contact</button>
+    <button onclick="showPage('donate')" class="nav-donate">Donate Now</button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ===================================================== -->
+<!-- ===== HOME PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-home" class="page active">
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="section-tag tag-white reveal">501(c)(3) Nonprofit · Sacramento, CA</span>
+      <h1 class="reveal">Helping Physically Challenged Children <em>Soar</em></h1>
+      <p class="reveal">Every child deserves the chance to dream, explore, and achieve their fullest potential. We provide free residential education, vocational training, and life skills so children facing physical challenges and hardship can build a dignified, sustainable future.</p>
+      <div class="hero-ctas reveal">
+        <button class="btn btn-orange btn-lg" onclick="showPage('donate')">
+          <svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Donate Today
+        </button>
+        <button class="btn btn-outline-white btn-lg" onclick="showPage('programs')">Explore Our Programs</button>
+      </div>
+    </div>
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-chevron-down"/></svg>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat reveal"><span class="stat-num count" data-target="3" data-suffix="">0</span><div class="stat-label">Active Programs</div></div>
+    <div class="stat reveal"><span class="stat-num count" data-target="100" data-suffix="%">0%</span><div class="stat-label">Free Residential Education</div></div>
+    <div class="stat reveal"><span class="stat-num count" data-target="40" data-suffix="+">0+</span><div class="stat-label">Years of Partner Impact</div></div>
+  </div>
+
+  <section class="mission-section">
+    <div class="mission-grid">
+      <div class="mission-text reveal">
+        <span class="section-tag tag-blue">Our Mission</span>
+        <h2>Lighting the Futures of Physically Challenged Children</h2>
+        <p>Dash of Hope Corporation is committed to making a positive difference in the lives of physically challenged, orphaned, and disadvantaged children. From classrooms to college to the family dinner table, we provide support, opportunities, and a brighter future — completely free of charge.</p>
+        <p>We believe a physical challenge should never be the reason a child is denied an education, a warm meal, or a family who shows up for them. If this cause moves you, join hands with us.</p>
+      </div>
+      <figure class="mission-photo reveal">
+        <img src="assets/images/mission-children-joy.jpg" alt="A group of joyful children laughing together outdoors, representative of the spirit our programs hope to nurture.">
+        <figcaption>Every child deserves to laugh this freely. <strong>(Representative stock photo.)</strong></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="programs-section">
+    <div class="section-header reveal">
+      <span class="section-tag tag-orange">Current Programs</span>
+      <h2>Programs Supported by Dash of Hope</h2>
+      <p>All three programs are located in and around Challagundla, Andhra Pradesh, India.</p>
+    </div>
+    <div class="programs-grid">
+      <div class="program-card reveal" onclick="showPage('orphancare')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('orphancare')">
+        <div class="program-img">
+          <img src="assets/images/rural-children.jpg" alt="Smiling children in a rural village setting, representative of the communities this program serves.">
+          <span class="badge section-tag tag-rose">Rural Andhra Pradesh</span>
+        </div>
+        <div class="program-body">
+          <h3>Rural Orphan Children Program</h3>
+          <p>A loving home for orphaned children in rural villages — free education, warm daily meals, cooking guidance, and round-the-clock care from a family that will never let them face life alone.</p>
+          <span class="program-link" style="color:#b8305c">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
+        </div>
+      </div>
+      <div class="program-card reveal" onclick="showPage('highschool')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('highschool')">
+        <div class="program-img">
+          <img src="assets/images/hs-classroom-assembly.jpg" alt="Rows of uniformed students in an Indian classroom listening to a teacher, representative of the High School Program.">
+          <span class="badge section-tag tag-blue">Grades 1–10</span>
+        </div>
+        <div class="program-body">
+          <h3>High School Program</h3>
+          <p>Free residential education from first through tenth grade, plus vocational skills like tailoring, basket weaving, and computer basics for a strong foundation.</p>
+          <span class="program-link">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
+        </div>
+      </div>
+      <div class="program-card reveal" onclick="showPage('juniorcollege')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('juniorcollege')">
+        <div class="program-img">
+          <img src="assets/images/jc-campus.jpg" alt="A modern college campus building, representative of where Junior College Program students attend classes.">
+          <span class="badge section-tag tag-orange">Since June 2023</span>
+        </div>
+        <div class="program-body">
+          <h3>Junior College Program</h3>
+          <p>Higher education support for high school graduates — covering boarding, commute, tuition, and all living expenses at $120/student per month.</p>
+          <span class="program-link" style="color:var(--orange)">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-story">
+    <div class="video-story-inner">
+      <div class="video-wrap reveal">
+        <video id="home-video" muted autoplay loop playsinline poster="assets/images/hero-classroom-writing.jpg">
+          <source src="assets/video/classroom-hands-raised.mp4" type="video/mp4">
+        </video>
+        <button class="mute-toggle" aria-label="Unmute video" aria-pressed="false">
+          <svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-mute"/></svg>
+        </button>
+        <div class="video-caption"><strong>A classroom eager to learn.</strong> Representative stock footage — not filmed at our partner school — shown to illustrate the everyday energy of a classroom full of engaged children.</div>
+      </div>
+      <div class="video-story-text reveal">
+        <span class="section-tag tag-white">See What's Possible</span>
+        <h2 style="color:#fff">A Hand Raised Is a Future Opening Up</h2>
+        <p>For a child who has faced rejection because of a physical challenge, or the loss of a parent, simply being invited to raise a hand and answer in class is its own quiet victory. Multiply that moment by every day, every lesson, every year of school — and you start to see what your support actually builds.</p>
+        <p>It isn't just a classroom. It's a chance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="section-header reveal">
+      <span class="section-tag tag-white">How It Works</span>
+      <h2>Your Donation Changes Lives</h2>
+      <p>Here's exactly how your support makes a difference from start to finish.</p>
+    </div>
+    <div class="steps-grid reveal-stagger">
+      <div class="step-card reveal" style="--i:0"><div class="step-num">1</div><h4>You Donate</h4><p>Every contribution directly funds a child's education and daily needs.</p></div>
+      <div class="step-card reveal" style="--i:1"><div class="step-num">2</div><h4>We Fund Schools</h4><p>100% of funds go to free residential programs in India.</p></div>
+      <div class="step-card reveal" style="--i:2"><div class="step-num">3</div><h4>Children Thrive</h4><p>Kids receive education, vocational training, and life skills support.</p></div>
+      <div class="step-card reveal" style="--i:3"><div class="step-num">4</div><h4>Futures Bloom</h4><p>Graduates secure government and private jobs — a dignified life.</p></div>
+    </div>
+  </section>
+
+  <section class="donate-cta">
+    <span class="section-tag tag-orange reveal">Make an Impact</span>
+    <h2 class="reveal">Ready to Change a Child's Life?</h2>
+    <p class="reveal">Your generosity gives physically challenged children the education and future they deserve.</p>
+    <div class="cta-cards-row">
+      <div class="cta-mini-card reveal"><span class="icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-book"/></svg></span><h4>Fund Education</h4><p>Cover books, supplies, and tuition for a student who needs it most.</p></div>
+      <div class="cta-mini-card reveal"><span class="icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-home"/></svg></span><h4>Sponsor Housing</h4><p>Help provide a safe, nurturing residential home environment.</p></div>
+      <div class="cta-mini-card reveal"><span class="icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-handshake"/></svg></span><h4>Spread the Word</h4><p>Share Dash of Hope with your network and multiply the impact.</p></div>
+    </div>
+    <button class="btn btn-orange btn-lg reveal" onclick="showPage('donate')">
+      <svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Donate Now — Change a Life
+    </button>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div>
+          <p>A 501(c)(3) nonprofit based in Sacramento, California, dedicated to empowering physically challenged children in India through education and opportunity.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <button onclick="showPage('home')">Home</button>
+          <button onclick="showPage('programs')">Programs</button>
+          <button onclick="showPage('orphancare')">Rural Orphan Children</button>
+          <button onclick="showPage('highschool')">High School</button>
+          <button onclick="showPage('juniorcollege')">Junior College</button>
+        </div>
+        <div class="footer-col">
+          <h4>Get Involved</h4>
+          <button onclick="showPage('donate')">Donate</button>
+          <button onclick="showPage('about')">About Us</button>
+          <button onclick="showPage('contact')">Contact Us</button>
+          <a href="mailto:contact@dashofhopecorp.org">Email Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Dash of Hope Corporation. All rights reserved. 501(c)(3) nonprofit.</p>
+        <span class="footer-badge">contact@dashofhopecorp.org · 916.292.8542</span>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== PROGRAMS PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-programs" class="page">
+  <section class="page-hero orange-bg">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <span>Programs</span></div>
+    <span class="section-tag tag-white reveal">What We Support</span>
+    <h1 class="reveal">Our Programs</h1>
+    <p class="reveal">We support organizations working with physically challenged children in education, life skills development, vocational training, and social development.</p>
+  </section>
+
+  <section class="programs-overview">
+    <div class="container" style="max-width:900px;">
+      <div class="section-header reveal" style="text-align:left;margin-bottom:2rem;">
+        <span class="section-tag tag-blue">Active Programs</span>
+        <h2>Programs We Currently Fund</h2>
+      </div>
+      <div class="programs-list-grid">
+        <div class="prog-detail-card reveal" onclick="showPage('orphancare')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('orphancare')">
+          <div class="prog-card-top"><img src="assets/images/rural-children.jpg" alt="Smiling children in a rural village setting, representative of the Rural Orphan Children Program."></div>
+          <div class="prog-card-body">
+            <span class="section-tag tag-rose" style="margin-bottom:0.4rem;">Care · Rural Villages</span>
+            <h3>Rural Orphan Children Program</h3>
+            <p>A safe, loving home for orphaned children from rural villages, offering free education, nourishing meals, cooking guidance, and devoted daily care — a family for those who have none.</p>
+            <div class="prog-card-footer">
+              <span class="prog-badge rose">Donor Funded</span>
+              <span style="font-size:0.85rem;font-weight:600;color:#b8305c">View Program →</span>
+            </div>
+          </div>
+        </div>
+        <div class="prog-detail-card reveal" onclick="showPage('highschool')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('highschool')">
+          <div class="prog-card-top"><img src="assets/images/hs-classroom-assembly.jpg" alt="Uniformed students seated in rows in an Indian classroom, representative of the High School Program."></div>
+          <div class="prog-card-body">
+            <span class="section-tag tag-blue" style="margin-bottom:0.4rem;">Education · Grades 1–10</span>
+            <h3>High School Program</h3>
+            <p>Full residential schooling from first through tenth grade including boarding, lodging, and vocational skill training in a government-aided program.</p>
+            <div class="prog-card-footer">
+              <span class="prog-badge govt">Govt. Aided</span>
+              <span style="font-size:0.85rem;font-weight:600;color:var(--navy-light)">View Program →</span>
+            </div>
+          </div>
+        </div>
+        <div class="prog-detail-card reveal" onclick="showPage('juniorcollege')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('juniorcollege')">
+          <div class="prog-card-top"><img src="assets/images/jc-campus.jpg" alt="A college campus building, representative of the Junior College Program."></div>
+          <div class="prog-card-body">
+            <span class="section-tag tag-orange" style="margin-bottom:0.4rem;">Higher Education · Since 2023</span>
+            <h3>Junior College Program</h3>
+            <p>Post-high-school support including college commute, boarding, tuition, and all living expenses — entirely funded by management and donors like you.</p>
+            <div class="prog-card-footer">
+              <span class="prog-badge private">Donor Funded</span>
+              <span style="font-size:0.85rem;font-weight:600;color:var(--orange)">View Program →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--navy);padding:4.5rem 3rem;text-align:center;">
+    <span class="section-tag tag-white reveal">Get Involved</span>
+    <h2 class="reveal" style="color:#fff;max-width:500px;margin:0.5rem auto 1rem;">Support a Program Today</h2>
+    <p class="reveal" style="color:rgba(255,255,255,0.78);max-width:480px;margin:0 auto 2rem;font-size:0.97rem;line-height:1.8;">100% of your donation goes directly to the children's needs. Every dollar makes a real difference in a child's future.</p>
+    <button class="btn btn-orange btn-lg reveal" onclick="showPage('donate')"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Donate to a Program</button>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== HIGH SCHOOL PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-highschool" class="page">
+  <section class="page-hero navy-bg hs">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <button onclick="showPage('programs')">Programs</button> › <span>High School</span></div>
+    <span class="section-tag tag-white reveal">Challagundla, AP, India</span>
+    <h1 class="reveal">High School Program</h1>
+    <p class="reveal">Rajiv Gandhi Memorial High School for Physically Handicapped Children — providing free residential education from Grade 1 through Grade 10.</p>
+  </section>
+
+  <section class="hs-content">
+    <div class="hs-inner">
+      <div class="hs-grid">
+        <div class="hs-text reveal">
+          <span class="section-tag tag-blue">About the Program</span>
+          <h2>Education That Changes Everything</h2>
+          <p>Children receive a full education from first through tenth grade following the government-prescribed syllabus. They stay in hostels and are provided complete boarding and lodging at no cost to their families.</p>
+          <p>Beyond academics, students are taught vocational skills including tailoring, basket weaving, and basic computer knowledge — building the skills they need for lifelong economic independence.</p>
+          <p>Many students go on to pursue higher education and secure government jobs, building a dignified life in society on par with the general population.</p>
+          <div style="margin-top:1.75rem;display:flex;gap:1rem;flex-wrap:wrap;">
+            <button class="btn btn-navy" onclick="showPage('donate')">Support This Program</button>
+            <button class="btn btn-outline-dark" onclick="showPage('juniorcollege')">Junior College <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></button>
+          </div>
+        </div>
+        <div class="photo-gallery reveal">
+          <div class="photo-tile"><img src="assets/images/hero-classroom-writing.jpg" alt="Rows of uniformed students writing at their desks during class."><span class="tile-label">Morning Assembly &amp; Class Time</span></div>
+          <div class="photo-tile"><img src="assets/images/teacher-rows.jpg" alt="A teacher standing with students seated in rows at their desks."><span class="tile-label">Lessons With Dedicated Teachers</span></div>
+          <div class="photo-tile"><img src="assets/images/computer-lab.jpg" alt="An empty computer lab with a row of monitors."><span class="tile-label">Computer Skills Training</span></div>
+          <div class="photo-tile"><img src="assets/images/indep-flag.jpg" alt="The Indian national flag flying against a blue sky."><span class="tile-label">Celebrating Independence Day</span></div>
+          <div class="photo-tile"><img src="assets/images/balloons-celebration.jpg" alt="Pink balloons decorating a celebration."><span class="tile-label">Cultural Celebrations</span></div>
+          <div class="photo-tile"><img src="assets/images/classroom-empty.jpg" alt="A simple classroom with wooden benches and a chalkboard."><span class="tile-label">A Quiet Place to Learn</span></div>
+          <div class="photo-tile"><img src="assets/images/lessons-chalkboard.jpg" alt="A rustic classroom with desks facing a chalkboard."><span class="tile-label">Daily Lessons</span></div>
+          <div class="photo-tile"><img src="assets/images/tea-hills-countryside.jpg" alt="Green rolling hills in the countryside."><span class="tile-label">The Surrounding Countryside</span></div>
+          <p class="gallery-note photo-note">All photos on this page are representative stock imagery used to illustrate program life — not actual photographs of this school or its students. We'll be replacing these with real photos from the program soon.</p>
+        </div>
+      </div>
+
+      <div class="supporters-strip reveal" style="margin-bottom:2.5rem;background:linear-gradient(135deg,var(--navy-dark),var(--navy-light));">
+        <div>
+          <h3>🇸🇪 Our Swedish Friends</h3>
+          <p>Generous sponsors from Sweden fund additional nutritious meals, cosmetics, private tutors, computer education, solar lamps, and batteries for the children — going beyond the government support.</p>
+        </div>
+        <button class="btn btn-orange" onclick="showPage('donate')">Join as a Sponsor</button>
+      </div>
+
+      <div class="needs-section reveal">
+        <h3>Current Needs — How You Can Help</h3>
+        <div class="needs-grid">
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-footprints"/></svg></span><div><h4>Cement Walking Path</h4><p>Accessible pathways for children with mobility challenges.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-book"/></svg></span><div><h4>Library Room</h4><p>A dedicated reading and learning space for all students.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-flask"/></svg></span><div><h4>Science Laboratory</h4><p>A lab room for hands-on science experiments.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-paintbrush"/></svg></span><div><h4>Classroom Renovation</h4><p>Patching and painting of worn classrooms.</p></div></div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <button class="btn btn-orange btn-lg" onclick="showPage('donate')"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Fund One of These Needs</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities-section">
+    <div class="activities-inner">
+      <div class="section-header reveal" style="text-align:left;">
+        <span class="section-tag tag-blue">Student Life</span>
+        <h2>Life at the School</h2>
+      </div>
+      <div class="activities-grid reveal-stagger">
+        <div class="activity-card reveal" style="--i:0"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-waves"/></svg></span><h4>Swimming</h4></div>
+        <div class="activity-card reveal" style="--i:1"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-utensils"/></svg></span><h4>Community Dining</h4></div>
+        <div class="activity-card reveal" style="--i:2"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-scissors"/></svg></span><h4>Tailoring Skills</h4></div>
+        <div class="activity-card reveal" style="--i:3"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-basket"/></svg></span><h4>Basket Weaving</h4></div>
+        <div class="activity-card reveal" style="--i:4"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-laptop"/></svg></span><h4>Computer Education</h4></div>
+        <div class="activity-card reveal" style="--i:5"><span class="a-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-drama"/></svg></span><h4>Cultural Events</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== JUNIOR COLLEGE PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-juniorcollege" class="page">
+  <section class="page-hero teal-bg">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <button onclick="showPage('programs')">Programs</button> › <span>Junior College</span></div>
+    <span class="section-tag tag-white reveal">Since June 2023 · Challagundla, AP, India</span>
+    <h1 class="reveal">Junior College Program</h1>
+    <p class="reveal">Providing higher education opportunities for physically challenged students who have completed high school — with all expenses fully covered.</p>
+  </section>
+
+  <section class="jc-content">
+    <div class="jc-inner">
+      <div class="jc-highlight reveal">
+        <h3><svg width="22" height="22" viewBox="0 0 24 24" style="color:var(--orange)"><use href="#i-graduation"/></svg> Why This Program Exists</h3>
+        <p>Many high school graduates do not pursue further education due to poverty or lack of family support. This program serves as a critical stepping stone, making these students eligible for government and private jobs. Graduates have already secured positions in banks and private companies — proof that this investment works.</p>
+      </div>
+
+      <div class="jc-photo-row reveal">
+        <div class="jc-photo"><img src="assets/images/students-walking.jpg" alt="Students walking outdoors with bags, representative of the daily commute to college."><span>Commuting to College Each Day</span></div>
+        <div class="jc-photo"><img src="assets/images/laptop-focus.jpg" alt="A student focused on a laptop, representative of independent study time."><span>Independent Study Time</span></div>
+        <div class="jc-photo"><img src="assets/images/mentor-laptop.jpg" alt="Two people reviewing work together at a laptop, representative of tutoring support."><span>One-on-One Tutoring Support</span></div>
+      </div>
+
+      <div class="cost-card reveal">
+        <h3>Program Costs &amp; Scale</h3>
+        <div class="cost-nums">
+          <div class="cost-num"><span class="big count" data-target="6">0</span><span class="label">Current Students</span></div>
+          <div class="cost-num"><span class="big count" data-target="10000" data-prefix="₹" data-locale="1">₹0</span><span class="label">Per Student / Month</span></div>
+          <div class="cost-num"><span class="big count" data-target="120" data-prefix="~$">~$0</span><span class="label">USD Per Student / Month</span></div>
+          <div class="cost-num"><span class="big count" data-target="100" data-suffix="%">0%</span><span class="label">Donor Funded</span></div>
+        </div>
+      </div>
+
+      <div class="jc-details">
+        <div class="detail-box reveal">
+          <h4>What's Covered</h4>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Boarding and lodging at Challagundla hostel</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Daily commute to SSN College Narasaraopet</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Full tuition fees</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> All other living expenses</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Personal necessities and supplies</li>
+          </ul>
+        </div>
+        <div class="detail-box reveal">
+          <h4>Program Structure</h4>
+          <ul>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Open to high school program graduates</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Students attend nearby city college</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Fully managed by program leadership</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> No government funding — fully donor supported</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-check"/></svg> Pathway to government &amp; private employment</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="jc-urgency reveal">
+        <h3>We Need Your Continuous Support</h3>
+        <p>This program receives zero government funding and relies entirely on the generosity of donors like you. Each $120/month sponsors one student's entire college journey — from hostel bed to degree to career.</p>
+        <button class="btn btn-white btn-lg" onclick="showPage('donate')"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Sponsor a Student — $120/month</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== ORPHAN CARE PROGRAM PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-orphancare" class="page">
+  <section class="page-hero rose-bg">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <button onclick="showPage('programs')">Programs</button> › <span>Rural Orphan Children</span></div>
+    <span class="section-tag tag-white reveal">Rural Andhra Pradesh, India</span>
+    <h1 class="reveal">Rural Orphan Children Program</h1>
+    <p class="reveal">For a child who has already lost so much, we open our door and offer what every child truly needs — a warm meal, an education, and someone who will never let them face the world alone.</p>
+  </section>
+
+  <section class="hs-content">
+    <div class="hs-inner">
+      <div class="hs-grid">
+        <div class="hs-text reveal">
+          <span class="section-tag tag-rose">About the Program</span>
+          <h2>A Home Where No Child Is Forgotten</h2>
+          <p>In the villages surrounding Challagundla, many children have lost one or both parents and have nowhere left to turn. Dash of Hope welcomes them into a loving home, where they are fed, taught, and cared for as part of our own family — not as a charity case, but as a child who deserves every chance at a joyful childhood.</p>
+          <p>Each child receives free schooling alongside three nourishing meals a day, cooked with the same care and warmth as a mother's kitchen. Older children are gently taught basic cooking and everyday life skills, learning to look after themselves and their younger siblings in a home built on togetherness rather than survival alone.</p>
+          <p>Our caretakers are present through every fever, every bad dream, and every small victory — because a child growing up without parents should never have to grow up without love. Your support keeps this home running, one plate, one lesson, one hug at a time.</p>
+          <div style="margin-top:1.75rem;display:flex;gap:1rem;flex-wrap:wrap;">
+            <button class="btn" style="background:#b8305c;color:#fff;" onclick="showPage('donate')">Support This Program</button>
+            <button class="btn btn-outline-dark" onclick="showPage('programs')">See All Programs <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></button>
+          </div>
+        </div>
+        <div class="photo-gallery reveal">
+          <div class="photo-tile"><img src="assets/images/meals-thali.jpg" alt="A warm, richly plated Indian thali meal."><span class="tile-label">Warm Shared Meals</span></div>
+          <div class="photo-tile"><img src="assets/images/lessons-chalkboard.jpg" alt="A rustic classroom with desks and a chalkboard."><span class="tile-label">Daily Lessons</span></div>
+          <div class="photo-tile" style="background:var(--warm-gray);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);">
+            <svg width="30" height="30" viewBox="0 0 24 24" style="color:var(--rose)"><use href="#i-bed"/></svg>
+            <span style="font-size:0.72rem;font-weight:600;">A Safe Bed to Sleep In</span>
+          </div>
+          <div class="photo-tile"><img src="assets/images/kitchen-space.jpg" alt="A kitchen with shelves of pots and cooking supplies."><span class="tile-label">Learning to Cook Together</span></div>
+          <div class="photo-tile"><img src="assets/images/group-arm-in-arm.jpg" alt="A diverse group of young people standing arm in arm, smiling."><span class="tile-label">A Caring Family</span></div>
+          <div class="photo-tile"><img src="assets/images/rural-children.jpg" alt="Smiling children in a rural village setting."><span class="tile-label">Village Life</span></div>
+          <div class="photo-tile"><img src="assets/images/girl-toy-play.jpg" alt="A young girl playing happily with a colorful toy."><span class="tile-label">Playtime &amp; Laughter</span></div>
+          <div class="photo-tile" style="background:var(--warm-gray);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:var(--muted);">
+            <svg width="30" height="30" viewBox="0 0 24 24" style="color:var(--rose)"><use href="#i-stethoscope"/></svg>
+            <span style="font-size:0.72rem;font-weight:600;">Health Check-ups</span>
+          </div>
+          <p class="gallery-note photo-note">All photos on this page are representative stock imagery used to illustrate program life — not actual photographs of this program's children. We'll be replacing these with real photos from the program soon.</p>
+        </div>
+      </div>
+
+      <div class="supporters-strip reveal" style="margin-bottom:2.5rem;background:linear-gradient(135deg,#7a1f3d,#b8305c);">
+        <div>
+          <h3><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Every Meal, Every Lesson, Every Hug</h3>
+          <p>These children have already faced more loss than any child should. A monthly gift of yours becomes their next warm meal, their school notebook, and the quiet reassurance that someone is looking out for them.</p>
+        </div>
+        <button class="btn" style="background:#fff;color:#b8305c;font-weight:700;" onclick="showPage('donate')">Become Part of Their Family</button>
+      </div>
+
+      <div class="needs-section reveal">
+        <h3>What These Children Need Most</h3>
+        <div class="needs-grid">
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-utensils"/></svg></span><div><h4>Daily Nutritious Meals</h4><p>Three warm, wholesome meals a day so no child ever goes to bed hungry.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-book"/></svg></span><div><h4>School Supplies &amp; Books</h4><p>Notebooks, uniforms, and learning materials so every child can keep learning.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-bed"/></svg></span><div><h4>Beds &amp; Bedding</h4><p>A clean, comfortable place to rest and simply be a child again.</p></div></div>
+          <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-stethoscope"/></svg></span><div><h4>Basic Medical Care</h4><p>Check-ups and medicine so small illnesses never go untreated.</p></div></div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a class="btn btn-lg" style="background:#b8305c;color:#fff;" href="https://www.paypal.com/donate?token=3kANBjv033TREMNMKNaIzxj8R8uD-XCICTHxdk9bsr8qOwHX0lhcmlUn4eObGLdGQl25-bnZLLJTp6Hv" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Help Provide for a Child in Need</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities-section">
+    <div class="activities-inner">
+      <div class="section-header reveal" style="text-align:left;">
+        <span class="section-tag tag-rose">Growing Up Together</span>
+        <h2>Life in Their Home</h2>
+      </div>
+      <div class="activities-grid reveal-stagger">
+        <div class="activity-card reveal" style="--i:0"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-chef-hat"/></svg></span><h4>Cooking Lessons</h4></div>
+        <div class="activity-card reveal" style="--i:1"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-sprout"/></svg></span><h4>Kitchen Garden</h4></div>
+        <div class="activity-card reveal" style="--i:2"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-pencil"/></svg></span><h4>Homework Time</h4></div>
+        <div class="activity-card reveal" style="--i:3"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-palette"/></svg></span><h4>Arts &amp; Play</h4></div>
+        <div class="activity-card reveal" style="--i:4"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-music"/></svg></span><h4>Music &amp; Dance</h4></div>
+        <div class="activity-card reveal" style="--i:5"><span class="a-icon" style="color:var(--rose)"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-message-heart"/></svg></span><h4>Story Time Together</h4></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== DONATE PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-donate" class="page">
+  <section class="page-hero donate-bg">
+    <div class="page-hero-bg"></div>
+    <span class="section-tag tag-white reveal">Make a Difference Today</span>
+    <h1 class="reveal">Every Dollar Changes a Life</h1>
+    <p class="reveal">No gift is too small. Starting at just $10/month, you can feed, educate, and uplift a physically challenged child in need.</p>
+  </section>
+
+  <section class="donate-content">
+    <div class="donate-inner">
+
+      <div class="trust-bar reveal-stagger">
+        <div class="trust-item reveal" style="--i:0"><span class="t-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-check-circle"/></svg></span><h4>100% to Children</h4><p>Every dollar donated goes directly to student needs — no overhead taken.</p></div>
+        <div class="trust-item reveal" style="--i:1"><span class="t-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-lock"/></svg></span><h4>Secure Payments</h4><p>All donations processed securely through PayPal.</p></div>
+        <div class="trust-item reveal" style="--i:2"><span class="t-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-file-check"/></svg></span><h4>Tax Deductible</h4><p>Dash of Hope is a registered 501(c)(3) nonprofit. Your gift is fully tax-deductible.</p></div>
+      </div>
+
+      <div class="donate-video-strip reveal">
+        <video muted autoplay loop playsinline poster="assets/images/meals-thali.jpg">
+          <source src="assets/video/volunteer-giving-bread.mp4" type="video/mp4">
+        </video>
+        <div class="video-caption"><strong>This is what your gift becomes.</strong> Representative stock footage of a hand-to-hand act of giving — illustrating how every donation, large or small, turns into a real meal for a real child. Not filmed at our partner programs.</div>
+      </div>
+
+      <div class="donation-tiers">
+        <div style="text-align:center;margin-bottom:0.5rem;"><span class="section-tag tag-orange reveal">Choose Your Impact</span></div>
+        <h2 class="reveal" style="text-align:center;">Give What You Can — Every Dollar Counts</h2>
+        <p class="reveal" style="text-align:center;color:var(--muted);margin-bottom:2.5rem;font-size:0.97rem;">Pick the giving level that works for you. All options directly fund a child's future.</p>
+
+        <div class="reveal" style="background:var(--warm-gray);border-radius:20px;padding:2rem;margin-bottom:2rem;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" style="color:var(--orange)"><use href="#i-refresh"/></svg>
+            <div>
+              <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;">Monthly Giving — Start Small, Make a Big Impact</h3>
+              <p style="font-size:0.85rem;color:var(--muted);">Recurring gifts give children consistent, reliable support all year long.</p>
+            </div>
+          </div>
+          <div class="tiers-grid">
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-coffee"/></svg></span>
+              <span class="tier-amount">$10</span>
+              <span class="tier-period">per month</span>
+              <p class="tier-desc">Skip one coffee a week and feed a child nutritious meals for a full month.</p>
+              <div class="tier-impact">Food for 1 Child / Month</div>
+            </button>
+            <button class="tier-card featured" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-popular">Most Affordable</span>
+              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
+              <span class="tier-amount">$25</span>
+              <span class="tier-period">per month</span>
+              <p class="tier-desc">Cover school supplies, books, and materials for one child every month.</p>
+              <div class="tier-impact">Education for 1 Child / Month</div>
+            </button>
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-home"/></svg></span>
+              <span class="tier-amount">$50</span>
+              <span class="tier-period">per month</span>
+              <p class="tier-desc">Provide food, shelter, and basic living essentials for one child each month.</p>
+              <div class="tier-impact">Food &amp; Housing / Month</div>
+            </button>
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-graduation"/></svg></span>
+              <span class="tier-amount">$120</span>
+              <span class="tier-period">per month</span>
+              <p class="tier-desc">Sponsor a junior college student's complete expenses — boarding, commute, tuition, and all living costs.</p>
+              <div class="tier-impact">Full Sponsorship / Month</div>
+            </button>
+          </div>
+        </div>
+
+        <div class="reveal" style="background:var(--warm-gray);border-radius:20px;padding:2rem;margin-bottom:2rem;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;">
+            <svg width="26" height="26" viewBox="0 0 24 24" style="color:var(--orange)"><use href="#i-gift"/></svg>
+            <div>
+              <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;">One-Time Gifts</h3>
+              <p style="font-size:0.85rem;color:var(--muted);">Give once, make a lasting difference whenever you're able.</p>
+            </div>
+          </div>
+          <div class="tiers-grid">
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-amount">$10</span>
+              <span class="tier-period">one-time gift</span>
+              <p class="tier-desc">Provides one week of nutritious meals for a physically challenged child.</p>
+            </button>
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-amount">$35</span>
+              <span class="tier-period">one-time gift</span>
+              <p class="tier-desc">Supplies one child with a full set of school books and stationery.</p>
+            </button>
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-amount">$100</span>
+              <span class="tier-period">one-time gift</span>
+              <p class="tier-desc">Covers uniforms, hygiene supplies, and personal items for one child.</p>
+            </button>
+            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-amount">Any</span>
+              <span class="tier-period">custom amount</span>
+              <p class="tier-desc">Give what you can — every single dollar goes to a child who needs it.</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="reveal" style="background:linear-gradient(135deg,#1a1a1a,#2c2c2c);border-radius:20px;padding:2rem 2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;text-align:center;margin-bottom:2rem;">
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-utensils"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$10/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Feeds 1 Child</span></div>
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-book"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$25/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Educates 1 Child</span></div>
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-home"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$50/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Food &amp; Housing</span></div>
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-star"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$120/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Full Sponsorship</span></div>
+        </div>
+      </div>
+
+      <div class="donate-methods reveal">
+        <h3>Ways to Give</h3>
+        <div class="method-list">
+          <div class="method-item"><span class="m-icon"><svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-lock"/></svg></span><div><h4>PayPal (Online)</h4><p>Fast, secure giving via PayPal. Accepts all major cards — set up monthly giving in just 2 clicks.</p><a href="https://www.dashofhopecorp.org/donate" target="_blank" rel="noopener">Donate via PayPal →</a></div></div>
+          <div class="method-item"><span class="m-icon"><svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-mail"/></svg></span><div><h4>Check by Mail</h4><p>Make payable to <strong>Dash of Hope Corporation</strong> and mail to our Sacramento office.</p></div></div>
+          <div class="method-item"><span class="m-icon"><svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-refresh"/></svg></span><div><h4>Set Up Monthly Giving</h4><p>Choose any amount — even $10/month makes a real difference when given consistently.</p></div></div>
+          <div class="method-item"><span class="m-icon"><svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-briefcase"/></svg></span><div><h4>Corporate / Group Giving</h4><p>Interested in a corporate sponsorship? <a href="#" onclick="showPage('contact');return false;">Contact us</a> to learn more.</p></div></div>
+        </div>
+      </div>
+
+      <div class="donate-action reveal">
+        <h2 style="margin-bottom:0.75rem;">Ready to Give?</h2>
+        <p style="color:var(--muted);margin-bottom:1.75rem;font-size:1rem;">Start with as little as $10/month. Every contribution — big or small — goes directly to a child in need.</p>
+        <a href="https://www.dashofhopecorp.org/donate" class="btn btn-orange btn-lg" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Donate Securely via PayPal</a>
+        <p>Questions? Email us at <a href="mailto:contact@dashofhopecorp.org" style="color:var(--navy-light);">contact@dashofhopecorp.org</a></p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== ABOUT PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-about" class="page">
+  <section class="page-hero green-bg">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <span>About Us</span></div>
+    <span class="section-tag tag-white reveal">Our Story</span>
+    <h1 class="reveal">About Dash of Hope</h1>
+    <p class="reveal">A nonprofit born from the belief that every physically challenged child deserves a life filled with happiness, opportunity, and dignity.</p>
+  </section>
+
+  <section class="about-content">
+    <div class="about-inner">
+      <div class="about-mission reveal">
+        <div>
+          <h3>Who We Are</h3>
+          <p>Dash of Hope Corporation is a non-profit organization located in Sacramento, California, committed to making a positive difference in the lives of physically challenged, orphaned and disadvantaged children. We have dedicated ourselves to providing support, opportunities, and a brighter future for challenged children.</p>
+        </div>
+        <div class="mission-divider"></div>
+        <div>
+          <h3>Our Mission</h3>
+          <p>At Dash of Hope, our mission is to empower physically challenged children to thrive, dream, and achieve their fullest potential. We believe that every child, regardless of their physical challenges, deserves a life filled with happiness, opportunities, and inclusion. We undertake activities and support organizations carrying out this mission.</p>
+        </div>
+      </div>
+
+      <div class="about-photo-band reveal">
+        <figure><img src="assets/images/mission-children-joy.jpg" alt="A group of joyful children laughing together outdoors."><figcaption>Every Child Deserves to Dream</figcaption></figure>
+        <figure><img src="assets/images/community-hall.jpg" alt="A large group of people seated together in a community hall."><figcaption>Our Community of Supporters</figcaption></figure>
+        <figure><img src="assets/images/students-walking.jpg" alt="Students walking outdoors together, carrying bags."><figcaption>Building Toward the Future</figcaption></figure>
+      </div>
+
+      <div class="values-section">
+        <div class="section-header reveal" style="text-align:left;">
+          <span class="section-tag tag-green">Our Values</span>
+          <h2>What Guides Everything We Do</h2>
+        </div>
+        <div class="values-grid reveal-stagger">
+          <div class="value-card reveal" style="--i:0"><span class="v-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-heart"/></svg></span><h4>Compassion</h4><p>Every decision starts with what's best for the children we serve.</p></div>
+          <div class="value-card reveal" style="--i:1"><span class="v-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-star"/></svg></span><h4>Dignity</h4><p>We believe every child deserves a dignified, independent future.</p></div>
+          <div class="value-card reveal" style="--i:2"><span class="v-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-users"/></svg></span><h4>Partnership</h4><p>We amplify impact by working through trusted local organizations.</p></div>
+          <div class="value-card reveal" style="--i:3"><span class="v-icon"><svg width="28" height="28" viewBox="0 0 24 24"><use href="#i-eye"/></svg></span><h4>Transparency</h4><p>100% of donations go to children — we are fully accountable to our donors.</p></div>
+        </div>
+      </div>
+
+      <div class="team-section">
+        <span class="section-tag tag-blue reveal">The People Behind the Mission</span>
+        <h2 class="reveal">Our Team</h2>
+        <p class="reveal">Dedicated individuals united by a single mission — giving physically challenged children the future they deserve.</p>
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-avatar">DC</div>
+            <h3>David Chatla</h3>
+            <div class="role">Co-Founder &amp; Director</div>
+            <p>Passionate about creating lasting change in the lives of physically challenged children through education and opportunity.</p>
+          </div>
+          <div class="team-card reveal">
+            <div class="team-avatar" style="background:linear-gradient(135deg,var(--orange),var(--orange-dark));">PC</div>
+            <h3>Prathap Chatla</h3>
+            <div class="role">Co-Founder &amp; Director</div>
+            <p>Committed to building partnerships that channel resources directly and transparently to those who need it most.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="org-section reveal">
+        <span class="section-tag tag-orange">How We Operate</span>
+        <h2>A Lean, Accountable Model</h2>
+        <p>Dash of Hope is run by a small, dedicated team who partner directly with trusted local organizations already doing the work on the ground in Andhra Pradesh — rather than building a large overhead structure from scratch. That means your gift moves quickly and directly: toward hostel meals, tuition, school supplies, and the everyday costs of running a home for children who need one.</p>
+        <p>Some of our work, like the High School Program, is government-aided; other efforts, like the Junior College Program and the Rural Orphan Children Program, receive no outside funding at all and depend entirely on donors like you. We're happy to answer any questions about how funds are used — just <a href="#" onclick="showPage('contact');return false;" style="color:var(--navy-light);font-weight:600;">reach out</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================================================== -->
+<!-- ===== CONTACT PAGE ===== -->
+<!-- ===================================================== -->
+<div id="page-contact" class="page">
+  <section class="page-hero navy-bg contact">
+    <div class="page-hero-bg"></div>
+    <div class="breadcrumb"><button onclick="showPage('home')">Home</button> › <span>Contact Us</span></div>
+    <span class="section-tag tag-white reveal">We'd Love to Hear From You</span>
+    <h1 class="reveal">Contact Us</h1>
+    <p class="reveal">Have a question, want to get involved, or just want to learn more? We'll respond at the earliest opportunity.</p>
+  </section>
+
+  <section class="contact-content">
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <span class="section-tag tag-blue">Get in Touch</span>
+        <h2>Connect With Us</h2>
+        <p>Whether you want to donate, volunteer, spread the word, or simply ask a question — we're here and happy to help.</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="cm-icon blue"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-mail"/></svg></div>
+            <div><h4>Email</h4><a href="mailto:contact@dashofhopecorp.org">contact@dashofhopecorp.org</a></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon orange"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-phone"/></svg></div>
+            <div><h4>Phone</h4><a href="tel:9162928542">916.292.8542</a></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon blue"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-pin"/></svg></div>
+            <div><h4>Based In</h4><p>Sacramento, California, USA</p></div>
+          </div>
+          <div class="contact-method">
+            <div class="cm-icon orange"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-clock"/></svg></div>
+            <div><h4>Response Time</h4><p>We typically respond within 1–2 business days.</p></div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-light));border-radius:16px;padding:1.75rem;color:#fff;margin-top:1rem;">
+          <h4 style="font-size:1rem;margin-bottom:0.5rem;">Want to make an immediate impact?</h4>
+          <p style="font-size:0.87rem;color:rgba(255,255,255,0.8);margin-bottom:1.25rem;line-height:1.7;">Skip the form and donate directly — 100% goes to the children.</p>
+          <button class="btn btn-orange" onclick="showPage('donate')"><svg width="16" height="16" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Donate Now</button>
+        </div>
+
+        <div class="contact-social">
+          <h4>Follow Our Journey</h4>
+          <div class="social-links">
+            <span class="social-btn">Facebook</span>
+            <span class="social-btn">Instagram</span>
+            <span class="social-btn">LinkedIn</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal">
+        <h3>Send Us a Message</h3>
+        <form onsubmit="handleFormSubmit(event)" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-first">First Name</label>
+              <input type="text" id="cf-first" name="firstName" placeholder="Your first name" autocomplete="given-name">
+              <div class="form-error" role="alert"></div>
+            </div>
+            <div class="form-group">
+              <label for="cf-last">Last Name</label>
+              <input type="text" id="cf-last" name="lastName" placeholder="Your last name" autocomplete="family-name">
+              <div class="form-error" role="alert"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email">
+            <div class="form-error" role="alert"></div>
+          </div>
+          <div class="form-group">
+            <label for="cf-phone">Phone (optional)</label>
+            <input type="tel" id="cf-phone" name="phone" placeholder="Your phone number" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="cf-interest">I'm interested in…</label>
+            <select id="cf-interest" name="interest">
+              <option>Donating to a program</option>
+              <option>Learning more about programs</option>
+              <option>Volunteering or spreading the word</option>
+              <option>Corporate / group giving</option>
+              <option>Media or partnership inquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Tell us how we can help or what you'd like to know…"></textarea>
+            <div class="form-error" role="alert"></div>
+          </div>
+          <button class="form-submit" type="submit">Send Message <svg width="16" height="16" viewBox="0 0 24 24" style="vertical-align:-3px"><use href="#i-arrow-right"/></svg></button>
+          <p style="font-size:0.78rem;color:var(--muted);margin-top:0.75rem;text-align:center;">This opens a pre-filled email in your mail app addressed to contact@dashofhopecorp.org — we'll reply within 1–2 business days.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
+        <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Dash of Hope Corporation. All rights reserved.</p><span class="footer-badge">contact@dashofhopecorp.org</span></div>
+    </div>
+  </footer>
+</div>
+
+</main>
+
+<button class="to-top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-arrow-up"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
