@@ -115,6 +115,7 @@ footer{background:var(--navy-dark);color:#fff;padding:3.5rem 3rem 2rem;position:
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem;}
 .footer-brand .logo{font-size:1.5rem;margin-bottom:1rem;cursor:default;}
 .footer-brand p{color:rgba(255,255,255,0.62);font-size:0.88rem;line-height:1.75;max-width:300px;}
+.footer-address{color:rgba(255,255,255,0.5)!important;font-size:0.8rem!important;margin-top:0.6rem;}
 .footer-col h4{font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1rem;}
 .footer-col button,.footer-col a{display:block;background:none;border:none;font-family:'DM Sans',sans-serif;font-size:0.88rem;color:rgba(255,255,255,0.72);cursor:pointer;text-decoration:none;margin-bottom:0.65rem;text-align:left;padding:0;transition:color var(--dur-s);}
 .footer-col button:hover,.footer-col a:hover{color:#fff;}
