@@ -16,6 +16,7 @@
 <!-- ============ ICON SPRITE (inline, no external icon library needed) ============ -->
 <svg style="display:none" aria-hidden="true">
 <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></symbol>
+<symbol id="i-shamrock" viewBox="0 0 24 24" fill="currentColor" stroke="none"><circle cx="12" cy="7.6" r="4.9"/><circle cx="7.3" cy="14.3" r="4.9"/><circle cx="16.7" cy="14.3" r="4.9"/><path d="M12 15.5c0 3-.8 4.6-1.6 6.5h3.2c-.8-1.9-1.6-3.5-1.6-6.5Z"/></symbol>
 <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
 <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
 <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8Z"/><circle cx="12" cy="12" r="3"/></symbol>
@@ -65,8 +66,8 @@
 <!-- ============ NAVIGATION ============ -->
 <nav aria-label="Primary">
   <button class="logo" onclick="showPage('home')" aria-label="Dash of Hope — go to homepage">
-    <svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-star"/></svg>
-    Dash of <span>Hope</span>
+    <svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg>
+    dash of hope
   </button>
   <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
     <span></span>
@@ -143,7 +144,7 @@
         <div class="program-body">
           <h3>Rural Orphan Children Program</h3>
           <p>A loving home for orphaned children in rural villages — free education, warm daily meals, cooking guidance, and round-the-clock care from a family that will never let them face life alone.</p>
-          <span class="program-link" style="color:#b8305c">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
+          <span class="program-link" style="color:#4c8a2e">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
         </div>
       </div>
       <div class="program-card reveal" onclick="showPage('highschool')" role="button" tabindex="0" onkeydown="if(event.key==='Enter')showPage('highschool')">
@@ -164,7 +165,7 @@
         </div>
         <div class="program-body">
           <h3>Junior College Program</h3>
-          <p>Higher education support for high school graduates — covering boarding, commute, tuition, and all living expenses at $120/student per month.</p>
+          <p>Higher education support for high school graduates — covering boarding, commute, tuition, and all living expenses at just $160/student per year.</p>
           <span class="program-link" style="color:var(--orange)">Learn more <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></span>
         </div>
       </div>
@@ -223,7 +224,8 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div>
+          <div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div>
+          <p class="footer-tagline">Hope for the hopeless</p>
           <p>A 501(c)(3) nonprofit based in Sacramento, California, dedicated to empowering physically challenged children in India through education and opportunity.</p>
         </div>
         <div class="footer-col">
@@ -277,7 +279,7 @@
             <p>A safe, loving home for orphaned children from rural villages, offering free education, nourishing meals, cooking guidance, and devoted daily care — a family for those who have none.</p>
             <div class="prog-card-footer">
               <span class="prog-badge rose">Donor Funded</span>
-              <span style="font-size:0.85rem;font-weight:600;color:#b8305c">View Program →</span>
+              <span style="font-size:0.85rem;font-weight:600;color:#4c8a2e">View Program →</span>
             </div>
           </div>
         </div>
@@ -319,7 +321,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -410,7 +412,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -448,10 +450,20 @@
         <h3>Program Costs &amp; Scale</h3>
         <div class="cost-nums">
           <div class="cost-num"><span class="big count" data-target="6">0</span><span class="label">Current Students</span></div>
-          <div class="cost-num"><span class="big count" data-target="10000" data-prefix="₹" data-locale="1">₹0</span><span class="label">Per Student / Month</span></div>
-          <div class="cost-num"><span class="big count" data-target="120" data-prefix="~$">~$0</span><span class="label">USD Per Student / Month</span></div>
+          <div class="cost-num"><span class="big count" data-target="160" data-prefix="$">$0</span><span class="label">Per Student / Year</span></div>
+          <div class="cost-num"><span class="big count" data-target="13280" data-prefix="₹" data-locale="1">₹0</span><span class="label">INR Equivalent / Year</span></div>
           <div class="cost-num"><span class="big count" data-target="100" data-suffix="%">0%</span><span class="label">Donor Funded</span></div>
         </div>
+      </div>
+
+      <div class="jc-sponsor-card reveal">
+        <div class="jc-sponsor-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-graduation"/></svg></div>
+        <div class="jc-sponsor-body">
+          <span class="tier-popular" style="position:static;transform:none;display:inline-block;margin-bottom:0.6rem;">Full Sponsorship</span>
+          <h3>Sponsor a Student — $160 <span style="font-weight:500;font-size:1rem;color:var(--muted);">/ year</span></h3>
+          <p>Sponsor a Junior College student's complete college journey for a full year — hostel boarding at Challagundla, daily commute to SSN College Narasaraopet, full tuition, and every living expense covered, start to finish.</p>
+        </div>
+        <a class="btn btn-white btn-lg" href="#" onclick="showPage('donate');return false;">Sponsor Now</a>
       </div>
 
       <div class="jc-details">
@@ -479,8 +491,8 @@
 
       <div class="jc-urgency reveal">
         <h3>We Need Your Continuous Support</h3>
-        <p>This program receives zero government funding and relies entirely on the generosity of donors like you. Each $120/month sponsors one student's entire college journey — from hostel bed to degree to career.</p>
-        <button class="btn btn-white btn-lg" onclick="showPage('donate')"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Sponsor a Student — $120/month</button>
+        <p>This program receives zero government funding and relies entirely on the generosity of donors like you. Just $160/year sponsors one student's entire college journey — from hostel bed to degree to career.</p>
+        <button class="btn btn-white btn-lg" onclick="showPage('donate')"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Sponsor a Student — $160/year</button>
       </div>
     </div>
   </section>
@@ -488,7 +500,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -519,7 +531,7 @@
           <p>Each child receives free schooling alongside three nourishing meals a day, cooked with the same care and warmth as a mother's kitchen. Older children are gently taught basic cooking and everyday life skills, learning to look after themselves and their younger siblings in a home built on togetherness rather than survival alone.</p>
           <p>Our caretakers are present through every fever, every bad dream, and every small victory — because a child growing up without parents should never have to grow up without love. Your support keeps this home running, one plate, one lesson, one hug at a time.</p>
           <div style="margin-top:1.75rem;display:flex;gap:1rem;flex-wrap:wrap;">
-            <button class="btn" style="background:#b8305c;color:#fff;" onclick="showPage('donate')">Support This Program</button>
+            <button class="btn" style="background:#4c8a2e;color:#fff;" onclick="showPage('donate')">Support This Program</button>
             <button class="btn btn-outline-dark" onclick="showPage('programs')">See All Programs <svg width="14" height="14" viewBox="0 0 24 24"><use href="#i-arrow-right"/></svg></button>
           </div>
         </div>
@@ -542,12 +554,12 @@
         </div>
       </div>
 
-      <div class="supporters-strip reveal" style="margin-bottom:2.5rem;background:linear-gradient(135deg,#7a1f3d,#b8305c);">
+      <div class="supporters-strip reveal" style="margin-bottom:2.5rem;background:linear-gradient(135deg,#2e5c1e,#4c8a2e);">
         <div>
           <h3><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Every Meal, Every Lesson, Every Hug</h3>
           <p>These children have already faced more loss than any child should. A monthly gift of yours becomes their next warm meal, their school notebook, and the quiet reassurance that someone is looking out for them.</p>
         </div>
-        <button class="btn" style="background:#fff;color:#b8305c;font-weight:700;" onclick="showPage('donate')">Become Part of Their Family</button>
+        <button class="btn" style="background:#fff;color:#4c8a2e;font-weight:700;" onclick="showPage('donate')">Become Part of Their Family</button>
       </div>
 
       <div class="needs-section reveal">
@@ -559,7 +571,7 @@
           <div class="need-item"><span class="need-icon"><svg width="26" height="26" viewBox="0 0 24 24"><use href="#i-stethoscope"/></svg></span><div><h4>Basic Medical Care</h4><p>Check-ups and medicine so small illnesses never go untreated.</p></div></div>
         </div>
         <div style="text-align:center;margin-top:2rem;">
-          <a class="btn btn-lg" style="background:#b8305c;color:#fff;" href="https://www.paypal.com/donate?token=3kANBjv033TREMNMKNaIzxj8R8uD-XCICTHxdk9bsr8qOwHX0lhcmlUn4eObGLdGQl25-bnZLLJTp6Hv" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Help Provide for a Child in Need</a>
+          <a class="btn btn-lg" style="background:#4c8a2e;color:#fff;" href="https://www.paypal.com/donate?token=3kANBjv033TREMNMKNaIzxj8R8uD-XCICTHxdk9bsr8qOwHX0lhcmlUn4eObGLdGQl25-bnZLLJTp6Hv" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24"><use href="#i-heart"/></svg> Help Provide for a Child in Need</a>
         </div>
       </div>
     </div>
@@ -585,7 +597,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -635,34 +647,31 @@
             </div>
           </div>
           <div class="tiers-grid">
-            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
-              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-coffee"/></svg></span>
+            <button class="tier-card tier-coffee" onclick="selectTier(this)" aria-pressed="false">
+              <span class="tier-popular tier-popular-green">Easiest Way to Start</span>
+              <span class="tier-icon steam-wrap">
+                <span class="steam s1" aria-hidden="true"></span><span class="steam s2" aria-hidden="true"></span>
+                <svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-coffee"/></svg>
+              </span>
               <span class="tier-amount">$10</span>
               <span class="tier-period">per month</span>
-              <p class="tier-desc">Skip one coffee a week and feed a child nutritious meals for a full month.</p>
-              <div class="tier-impact">Food for 1 Child / Month</div>
+              <p class="tier-desc">Skip just one coffee a week — about $2.50 — and that alone feeds a physically challenged child nutritious meals for a full month. No gift is too small to start with.</p>
+              <div class="tier-impact">Feeds 1 Child / Month</div>
             </button>
             <button class="tier-card featured" onclick="selectTier(this)" aria-pressed="false">
               <span class="tier-popular">Most Affordable</span>
               <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-book"/></svg></span>
               <span class="tier-amount">$25</span>
               <span class="tier-period">per month</span>
-              <p class="tier-desc">Cover school supplies, books, and materials for one child every month.</p>
-              <div class="tier-impact">Education for 1 Child / Month</div>
+              <p class="tier-desc">Cover school supplies, books, and materials — plus a nutritious food boost — for one child every month.</p>
+              <div class="tier-impact">Education &amp; Food / Month</div>
             </button>
             <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
-              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-home"/></svg></span>
+              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-heart"/></svg></span>
               <span class="tier-amount">$50</span>
               <span class="tier-period">per month</span>
-              <p class="tier-desc">Provide food, shelter, and basic living essentials for one child each month.</p>
-              <div class="tier-impact">Food &amp; Housing / Month</div>
-            </button>
-            <button class="tier-card" onclick="selectTier(this)" aria-pressed="false">
-              <span class="tier-icon"><svg width="30" height="30" viewBox="0 0 24 24"><use href="#i-graduation"/></svg></span>
-              <span class="tier-amount">$120</span>
-              <span class="tier-period">per month</span>
-              <p class="tier-desc">Sponsor a junior college student's complete expenses — boarding, commute, tuition, and all living costs.</p>
-              <div class="tier-impact">Full Sponsorship / Month</div>
+              <p class="tier-desc">Give a child everything they need for a month — nutritious meals, safe housing, school supplies, and caring supervision, all in one gift.</p>
+              <div class="tier-impact">Complete Care / Month</div>
             </button>
           </div>
         </div>
@@ -699,11 +708,15 @@
           </div>
         </div>
 
-        <div class="reveal" style="background:linear-gradient(135deg,#1a1a1a,#2c2c2c);border-radius:20px;padding:2rem 2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;text-align:center;margin-bottom:2rem;">
-          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-utensils"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$10/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Feeds 1 Child</span></div>
-          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-book"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$25/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Educates 1 Child</span></div>
-          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-home"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$50/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Food &amp; Housing</span></div>
-          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-star"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$120/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Full Sponsorship</span></div>
+        <div class="reveal" style="background:linear-gradient(135deg,#0f2b0a,#1f4d14);border-radius:20px;padding:2rem 2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;text-align:center;margin-bottom:2rem;">
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-coffee"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$10/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Feeds 1 Child</span></div>
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-book"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$25/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Educates &amp; Feeds 1 Child</span></div>
+          <div><svg width="34" height="34" viewBox="0 0 24 24" style="color:var(--gold);margin:0 auto 0.5rem;display:block;"><use href="#i-heart"/></svg><span style="font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--gold);display:block;">$50/mo</span><span style="font-size:0.78rem;color:rgba(255,255,255,0.7);text-transform:uppercase;letter-spacing:0.06em;">Complete Care</span></div>
+        </div>
+
+        <div class="reveal jc-crosslink">
+          <svg width="24" height="24" viewBox="0 0 24 24"><use href="#i-graduation"/></svg>
+          <p>Want to fully sponsor a Junior College student for an entire year? Visit the <a href="#" onclick="showPage('juniorcollege');return false;">Junior College program page</a> for the $160/year sponsorship.</p>
         </div>
       </div>
 
@@ -730,7 +743,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -816,7 +829,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
@@ -928,7 +941,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-top">
-        <div class="footer-brand"><div class="logo"><svg width="20" height="20" viewBox="0 0 24 24"><use href="#i-star"/></svg> Dash of <span>Hope</span></div><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
+        <div class="footer-brand"><div class="logo"><svg width="22" height="22" viewBox="0 0 24 24"><use href="#i-shamrock"/></svg> dash of hope</div><p class="footer-tagline">Hope for the hopeless</p><p>501(c)(3) nonprofit based in Sacramento, CA, empowering physically challenged and orphaned children in India.</p></div>
         <div class="footer-col"><h4>Navigate</h4><button onclick="showPage('home')">Home</button><button onclick="showPage('programs')">Programs</button><button onclick="showPage('orphancare')">Rural Orphan Children</button><button onclick="showPage('highschool')">High School</button><button onclick="showPage('juniorcollege')">Junior College</button></div>
         <div class="footer-col"><h4>Get Involved</h4><button onclick="showPage('donate')">Donate</button><button onclick="showPage('about')">About Us</button><button onclick="showPage('contact')">Contact Us</button></div>
       </div>
