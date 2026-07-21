@@ -124,8 +124,8 @@ footer{background:var(--navy-dark);color:#fff;padding:3.5rem 3rem 2rem;position:
 @media (max-width:800px){.footer-top{grid-template-columns:1fr;gap:2rem;}.footer-bottom{flex-direction:column;align-items:flex-start;}}
 
 /* ============ HOME PAGE ============ */
-.hero{position:relative;color:#fff;padding:6.5rem 3rem 5.5rem;text-align:center;overflow:hidden;isolation:isolate;text-shadow:0 2px 10px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.5);}
-.hero-bg{position:absolute;inset:0;background:url('assets/images/hero-classroom-writing.jpg') center 30%/cover;z-index:-2;will-change:transform;}
+.hero{position:relative;color:#fff;padding:6.5rem 3rem 5.5rem;text-align:center;overflow:hidden;isolation:isolate;text-shadow:0 2px 10px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.5);background:#0f2b0a;}
+.hero-bg{position:absolute;inset:0;background:url('assets/images/hero-classroom-writing.jpg') center 30%/cover;z-index:-2;will-change:transform;opacity:0.5;}
 .hero-content{position:relative;z-index:1;max-width:720px;margin:0 auto;}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:900;line-height:1.14;margin:0.6rem 0 1.4rem;}
 .hero h1 em{color:var(--gold);font-style:normal;}
@@ -209,8 +209,8 @@ footer{background:var(--navy-dark);color:#fff;padding:3.5rem 3rem 2rem;position:
 .count{font-variant-numeric:tabular-nums;}
 
 /* ============ PAGE HERO (subpages) ============ */
-.page-hero{padding:4.5rem 3rem;text-align:center;color:#fff;position:relative;overflow:hidden;isolation:isolate;text-shadow:0 2px 10px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.5);}
-.page-hero .page-hero-bg{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;will-change:transform;}
+.page-hero{padding:4.5rem 3rem;text-align:center;color:#fff;position:relative;overflow:hidden;isolation:isolate;text-shadow:0 2px 10px rgba(0,0,0,0.6),0 1px 3px rgba(0,0,0,0.5);background:#0f2b0a;}
+.page-hero .page-hero-bg{position:absolute;inset:0;z-index:-1;background-size:cover;background-position:center;will-change:transform;opacity:0.5;}
 .page-hero.orange-bg .page-hero-bg{background-image:url('assets/images/heritage-building.jpg');}
 .page-hero.navy-bg .page-hero-bg{background-color:#0e2a24;}
 .page-hero.navy-bg.hs .page-hero-bg{background-image:url('assets/images/hs-classroom-assembly.jpg');}
